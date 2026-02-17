@@ -268,7 +268,8 @@ def _inference_single_pose_model(model,
                 'image_size': np.array(cfg.data_cfg['image_size']),
                 'num_joints': cfg.data_cfg['num_joints'],
                 'flip_pairs': flip_pairs
-            }
+            },
+            'dataset_idx': 0
         }
         if isinstance(img_or_path, np.ndarray):
             data['img'] = img_or_path
